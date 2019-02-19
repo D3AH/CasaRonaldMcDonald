@@ -1,0 +1,19 @@
+hospitales
+    nombre
+    dirección
+    telefono
+
+casa
+    nombre
+    dirección
+    telefono
+
+huesped
+    nombre
+    situación_clinica (Acordar nombre)
+    encargado (Si es menor de edad) => huesped
+    hospital => hospital
+    casa => casa
+    fechaEntrada
+    fechaSalida
+    activo
