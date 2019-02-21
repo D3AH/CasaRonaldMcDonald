@@ -11,7 +11,6 @@ class House(models.Model):
     name = models.CharField(max_length=50)
     address = models.CharField(max_length=120)
     department = models.CharField(max_length=60)
-    web_page = models.CharField(max_length=50)
     phone_address = models.CharField(max_length=10)
 
 class Guest(models.Model):
