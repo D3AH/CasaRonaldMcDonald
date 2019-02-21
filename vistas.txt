@@ -1,0 +1,21 @@
+HECHAS
+index
+agregar hospital
+agregar paciente
+agregar casa
+
+
+POR AGREGAR
+
+listar hospital
+listar casa
+listar paciente
+
+agregar evento
+listar evento
+vista evento
+
+vista_donar
+vista_donar_gracias
+
+login trabajadores
