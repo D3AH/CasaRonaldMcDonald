@@ -6,3 +6,6 @@ def index(request):
 
 def addHouse(request):
     return render(request, 'add_house.html')
+
+def casas(request):
+    return render(request, 'casas.html')
