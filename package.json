@@ -1,0 +1,19 @@
+{
+  "name": "ronaldmcdonald",
+  "version": "1.0.0",
+  "description": "Web for houses Ronald McDonald.",
+  "dependencies": {
+    "packery": "^2.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foursquarex/CasaRonaldMcDonald.git"
+  },
+  "author": "foursquarex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/foursquarex/CasaRonaldMcDonald/issues"
+  },
+  "homepage": "https://github.com/foursquarex/CasaRonaldMcDonald#readme"
+}

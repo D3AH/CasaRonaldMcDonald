@@ -4,10 +4,12 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pylint = "*"
 
 [packages]
 django-bootstrap3 = "*"
 django = "*"
+django-npm = "*"
 
 [requires]
 python_version = "3.5"

@@ -1,3 +1,5 @@
 ronald/db.sqlite3
 markup-design/
 **__pycache__/
+node_modules/
+static/
