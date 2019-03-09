@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # CSS
-    'bootstrap3',
+    'bootstrap4',
     # INTERNAL
     'host',
 ]
