@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Web for houses Ronald McDonald.",
   "dependencies": {
+    "draggabilly": "^2.2.0",
     "packery": "^2.1.2"
   },
   "devDependencies": {},

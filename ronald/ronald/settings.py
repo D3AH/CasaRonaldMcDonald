@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     # CSS
     'bootstrap4',
     # INTERNAL
-    'host',
+    'host.apps.HostConfig',
 ]
 
 # STATICFILES_FINDERS = [
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "../node_modules/packery/dist"),
+    os.path.join(BASE_DIR, "../node_modules/draggabilly/dist"),
 ]
 
 # Static files (CSS, JavaScript, Images)

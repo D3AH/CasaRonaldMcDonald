@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class WebConfig(AppConfig):
-    name = 'web'
+class HostConfig(AppConfig):
+    name = 'host'
