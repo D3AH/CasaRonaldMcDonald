@@ -11,6 +11,9 @@ django-bootstrap3 = "*"
 django = "*"
 django-npm = "*"
 django-bootstrap4 = "*"
+libsass = "*"
+django-compressor = "*"
+django-sass-processor = "*"
 
 [requires]
 python_version = "3.5"

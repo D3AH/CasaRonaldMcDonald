@@ -37,19 +37,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # CSS
+    # Scss and css
     'bootstrap4',
-    # INTERNAL
+    'sass_processor',
+    # Internal
     'host.apps.HostConfig',
 ]
 
-# STATICFILES_FINDERS = [
-#     'npm.finders.NpmFinder',
-# ]
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "../node_modules/packery/dist"),
-    os.path.join(BASE_DIR, "../node_modules/draggabilly/dist"),
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
 ]
 
 # Static files (CSS, JavaScript, Images)
@@ -58,10 +56,16 @@ STATICFILES_DIRS = [
 STATIC_URL = '/static/'
 STATIC_ROOT = './static/'
 
-# NPM FINDER
-NPM_ROOT_PATH = '/home/d3h/Projects/Kinal/RonaldMcDonald' # Absolute path
-NPM_FILE_PATTERNS = {
-    'packery': ['dist/*.js']
+SASS_PROCESSOR_INCLUDE_DIRS = [
+    os.path.join(BASE_DIR, 'host/static/scss'),
+    os.path.join(BASE_DIR, 'static/scss'),
+]
+
+SASS_PROCESSOR_AUTO_INCLUDE = True
+SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'
+
+BOOTSTRAP4 = {
+    'theme_url': 'static/css/bootstrap.min.css'
 }
 
 MIDDLEWARE = [
@@ -137,3 +141,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+# # NPM FINDER
+# NPM_ROOT_PATH = '/home/d3h/Projects/Kinal/RonaldMcDonald' # Absolute path
+# NPM_FILE_PATTERNS = {
+#     'packery': ['dist/*.js']
+# }

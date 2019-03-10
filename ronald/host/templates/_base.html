@@ -7,27 +7,29 @@
 {% bootstrap_css %}
 {% bootstrap_javascript %}
 
+{% load sass_tags %}
+
 {# Display django.contrib.messages as Bootstrap alerts #}
 {% bootstrap_messages %}
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
 <!-- CSS -->
-<link rel="stylesheet" media="screen" href="{% static 'css/inicio.css' %}"/>
+<link rel="stylesheet" media="screen" href="{% sass_src 'scss/main.scss' %}"/>
 
 <!-- Iconos -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <!-- Fuentes -->
 <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Poppins" rel="stylesheet">
 
-<!-- JS -->
-<script src="{% static  'packery.pkgd.js' %}"></script>
-<script src="{% static  'draggabilly.pkgd.js' %}"></script>
-
 {% include '_navbar.html' %}
 
-<div class="container">
+<main class="container">
     {% block content %}
     <!-- outlet -->
     {% endblock %}
-</div>
+</main>
 
 {% include '_footer.html' %}
