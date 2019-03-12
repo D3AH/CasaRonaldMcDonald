@@ -1,0 +1,14 @@
+{% extends '_base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+    <form action="/casas/test_form" method="post" class="form">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+        <button type="submit" class="btn btn-primary">
+            Submit
+        </button>
+        {% endbuttons %}
+</form>
+{% endblock content %}
