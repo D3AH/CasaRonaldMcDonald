@@ -1,16 +1,10 @@
 {% load staticfiles %}
 
-{# Load the tag library #}
-{% load bootstrap4 %}
-
-{# Load CSS and JavaScript #}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
+{% include '_source.html' %}
 
 {% load sass_tags %}
 
-{# Display django.contrib.messages as Bootstrap alerts #}
-{% bootstrap_messages %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +18,10 @@
 <!-- Fuentes -->
 <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Poppins" rel="stylesheet">
 
-{% include '_navbar.html' %}
+
+{% block navbar %}
+    {% include '_navbar.html' %}
+{% endblock navbar %}
 
 <main class="container">
     {% block content %}
@@ -32,4 +29,7 @@
     {% endblock %}
 </main>
 
-{% include '_footer.html' %}
+
+{% block footer %}
+    {% include '_footer.html' %}
+{% endblock footer %}
