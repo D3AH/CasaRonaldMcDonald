@@ -1,0 +1,30 @@
+.imageninicio{
+    width: 100%; 
+    -webkit-filter: brightness(50%) blur(3px);
+    filter: brightness(50%) blur(3px);;
+}
+
+.iconos{
+    color: gray;
+}
+
+.iconos a i{
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+.iconos a i:hover{
+    color: black;
+}
+
+/* footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}    */
+
+.cuerpo{
+    margin-top: 25px;
+}
