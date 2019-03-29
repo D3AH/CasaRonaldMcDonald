@@ -6,3 +6,13 @@ class HouseForm(forms.ModelForm):
     class Meta:
         model = House
         fields = ['name', 'address', 'department', 'phone_address']
+
+class HospitalForm(forms.ModelForm):
+    class Meta:
+        model = Hospital
+        fields = ['name', 'address', 'department', 'web_page', 'phone_address']
+
+class GuestForm(forms.ModelForm):
+    class Meta:
+        model = Guest
+        fields = ['first_name', 'last_name', 'department', 'date_of_birth', 'date_of_request']
