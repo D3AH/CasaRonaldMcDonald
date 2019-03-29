@@ -1,0 +1,23 @@
+.container {
+    padding-top: 150px;
+}
+
+.col-12.heart {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.fas.fa-heart {
+    font-size: 15rem;
+    color: red;
+}
+
+.col-12.form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
