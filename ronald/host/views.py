@@ -8,9 +8,6 @@ def index(request):
     return render(request, 'index.html')
 
 def addHouse(request):
-    return render(request, 'house/add_house.html')
-
-def addHouseForm(request):
     if request.method == 'POST':
         form = HouseForm(request.POST)
         if form.is_valid():
@@ -19,7 +16,7 @@ def addHouseForm(request):
     else:
         form = HouseForm()
         
-    return render(request, 'house/add_house_form.html', { 'form': form })
+    return render(request, 'house/add_house.html', { 'form': form })
 
 def listHouses(request):
     all_houses = get_list_or_404(House)
