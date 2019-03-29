@@ -1,0 +1,22 @@
+.login-wrap{
+    position: relative;
+    margin: 0 auto;
+    background-color: #F4F6F6;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgb(104, 104, 104);
+    padding: 15px;
+    top: 50px;
+  }
+  h2{margin-top: 10px;}
+  .form{padding-top: 20px;}
+  #usuario, #contra, button {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    height: 40px;
+    border-radius: 5px;
+    outline: 0;
+    -moz-outline-style: none;
+  }
+  p{padding-bottom: 15px; color: #3498DB; text-decoration: underline;}
