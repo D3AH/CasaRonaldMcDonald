@@ -16,12 +16,12 @@ def addHouse(request):
     else:
         form = HouseForm()
         
-    return render(request, 'house/add_house.html', { 'form': form })
+    return render(request, 'components/bootstrap_form.html', {'form' : form, 'action': '/casa/agregar' })
 
 def listHouses(request):
     all_houses = get_list_or_404(House)
 
-    return render(request, 'house/list_houses.html', { 'houses': all_houses })
+    return render(request, 'components/list_simple.html', { 'objects': all_houses, 'url': 'casa'})
 
 def showHouse(request, house_id):
     house = get_object_or_404(House, pk=house_id)
@@ -30,19 +30,19 @@ def showHouse(request, house_id):
 
 def addHospital(request):
     if request.method == 'POST':
-        form = HospitalForm(request.POST)
+        form = HospitalForm(request.POST, request.FILES)
         if form.is_valid():
             form.save(commit=True)
             return HttpResponseRedirect('/')
     else:
         form = HospitalForm()
 
-    return render(request, 'hospital/add_hospital.html', {'form' : form})
+    return render(request, 'components/bootstrap_form.html', {'form' : form, 'action': '/hospital/agregar' })
 
 def listHospitals(request):
     all_hospitals = get_list_or_404(Hospital)
 
-    return render(request, 'hospital/list_hospitals.html', { 'hospitals' : all_hospitals})
+    return render(request, 'components/list_simple.html', { 'objects' : all_hospitals, 'url': 'hospital'})
 
 def showHospital(request):
     hospital = get_object_or_404(Hospital, pk=hospital_id)
