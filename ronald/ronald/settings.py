@@ -59,10 +59,6 @@ STATICFILES_FINDERS = [
 STATIC_URL = '/static/'
 STATIC_ROOT = './static/'
 
-STATICFILES_DIRS = [
-    ('favicon', os.path.join(BASE_DIR, 'favicon')),
-]
-
 SASS_PROCESSOR_INCLUDE_DIRS = [
     os.path.join(BASE_DIR, 'host/static/scss'),
     os.path.join(BASE_DIR, 'static/scss'),
