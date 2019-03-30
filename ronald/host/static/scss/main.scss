@@ -33,6 +33,17 @@ nav {
     }
 }
 
+// UI
+.card, .btn {
+    @extend .shadow ;
+}
+
+.shadow {
+    -moz-box-shadow:    2px 2px 2px 2px #ccccccb8;
+    -webkit-box-shadow: 2px 2px 2px 2px #ccccccb8;
+    box-shadow:         2px 2px 2px 2px #ccccccb8;
+}
+
 // @import 'login';
 @import 'index';
 @import 'houses';
