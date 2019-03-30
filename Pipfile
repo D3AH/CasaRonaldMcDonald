@@ -15,6 +15,7 @@ libsass = "*"
 django-compressor = "*"
 django-sass-processor = "*"
 django-icons = "*"
+django-favicon-plus = "*"
 
 [requires]
 python_version = "3.5"

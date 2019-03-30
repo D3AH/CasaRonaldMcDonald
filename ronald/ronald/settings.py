@@ -36,9 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     # Scss and css
     'bootstrap4',
     'sass_processor',
+    'favicon',
     # Font awesome
     'django_icons',
     # Internal
@@ -56,6 +58,10 @@ STATICFILES_FINDERS = [
 
 STATIC_URL = '/static/'
 STATIC_ROOT = './static/'
+
+STATICFILES_DIRS = [
+    ('favicon', os.path.join(BASE_DIR, 'favicon')),
+]
 
 SASS_PROCESSOR_INCLUDE_DIRS = [
     os.path.join(BASE_DIR, 'host/static/scss'),

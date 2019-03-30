@@ -4,13 +4,13 @@
 {% block content %}
 
     <div class="row hospitals">
-        {% for house in houses %}
+        {% for hospital in hospitals %}
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
                     <img src="{% static 'img/django.png' %}" alt="" class="card-img-top">
                     <div class="card-body">
-                        <strong class="card-title">{{ house.name }}</strong>
-                        <p class="card-text text-muted">{{ house.department }}</p>
+                        <strong class="card-title">{{ hospital.name }}</strong>
+                        <p class="card-text text-muted">{{ hospital.department }}</p>
                     </div>
                     <div class="card-footer">
                         <a href="/hospital/{{hospital.id}}/" class="btn btn-primary">Más información</a>

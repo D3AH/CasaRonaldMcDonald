@@ -38,6 +38,22 @@ nav {
     @extend .shadow ;
 }
 
+// List of houses
+.card {
+    text-align: center;
+    height: 20rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    strong.card-title {
+        display: inline-block;
+        width: 100%;
+        line-height: 1rem;
+        height: 2rem;
+        overflow: hidden;
+    }
+}
+
 .shadow {
     -moz-box-shadow:    2px 2px 2px 2px #ccccccb8;
     -webkit-box-shadow: 2px 2px 2px 2px #ccccccb8;
