@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'mcnn^$sm%(lvino8h$fi77%@etnt1q-2%jvs$k(pbm7n5niv32'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -59,12 +59,9 @@ STATICFILES_FINDERS = [
 STATIC_URL = '/static/'
 STATIC_ROOT = './static/'
 
-STATICFILES_DIRS = [
-    ('files', os.path.join(BASE_DIR, 'files')),
-]
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'  
+MEDIA_URL = '/media/'
+print(MEDIA_ROOT)
 
 SASS_PROCESSOR_INCLUDE_DIRS = [
     os.path.join(BASE_DIR, 'host/static/scss'),
@@ -118,8 +115,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-SITE_ID = 2
 
 
 # Password validation
