@@ -2,20 +2,14 @@
 <!-- CSS -->
 <link rel="stylesheet" media="screen" href="{% sass_src 'scss/_login.scss' %}"/>
 
-<div class="login-page">
-  <div class="form">
-    <!-- <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form> -->
-    <form class="login-form" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-        <p class="message">Not registered? <a href="accounts/login">Create an account</a></p>
-      </form>
+<div class="overlay" style="align-content: center">
+  <div class="wrap">
+   <h1>Login</h1>
+<input type="text" placeholder="Username">
+<input type="password"placeholder="Password">
+    <input type="submit" value="Sign In">
+    <a href="#"><i class="fa fa-question"></i>Forgotten Password</a>
+    <a href="#"><i class="fa fa-user"></i>Create an Account</a>
   </div>
+  <p class="message">Not registered? <a href="accounts/login">Create an account</a></p>
 </div>
