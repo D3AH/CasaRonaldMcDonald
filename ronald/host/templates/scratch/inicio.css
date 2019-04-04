@@ -46,8 +46,8 @@ html, body {
 /* Scrolling Sections */
 
 .fullSections {
-    height: 100%;
-    background-color: rebeccapurple;
+    height: 65%;
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -57,7 +57,22 @@ html, body {
   .subSections {
     height: 50%;
   }
-  
+
+  .vericons{
+    margin: 0 45px;
+  }
+
+  .card{
+    border-style: none;
+    transition: 0.7s;
+  }
+
+  .card:hover{
+    -webkit-box-shadow: 0px 0px 67px -9px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 67px -9px rgba(0,0,0,1);
+    box-shadow: 0px 0px 67px -9px rgba(0,0,0,1);
+  }
+
   .topSectionBG {
     background-image: url(../../static/img/hola3.jpg);
   }
