@@ -16,6 +16,7 @@ django-compressor = "*"
 django-sass-processor = "*"
 django-icons = "*"
 django-favicon-plus = "*"
+django-bootstrap-datepicker-plus = "*"
 
 [requires]
 python_version = "3.5"

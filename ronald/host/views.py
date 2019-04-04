@@ -1,7 +1,7 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_list_or_404, get_object_or_404
-from .models import House, Hospital
-from .forms import HouseForm, HospitalForm
+from .models import House, Hospital, Guest
+from .forms import HouseForm, HospitalForm, GuestForm
 
 # Create your views here.
 def index(request):
@@ -44,7 +44,30 @@ def listHospitals(request):
 
     return render(request, 'components/list_simple.html', { 'objects' : all_hospitals, 'url': 'hospital'})
 
-def showHospital(request):
+def showHospital(request, hospital_id):
     hospital = get_object_or_404(Hospital, pk=hospital_id)
 
     return render(request, 'hospital/show_hospital.html', {'hospital' : hospital})
+
+def addGuest(request):
+    if request.method == 'POST':
+        form = GuestForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save(commit=True)
+            return HttpResponseRedirect('/')
+        else:
+            form =GuestForm()
+        return render(request, 'components/boostrap_form.html', {'form' : form, 'action': '/guest/agregar'})
+
+def listGuests(request):
+    all_guests = get_list_or_404(Guest)
+
+    return render(request, 'components/list_simple.html', { 'objects' : all_guests, 'url': 'guest'})
+
+def showGuest(request, guest_id):
+    guest = get_object_or_404(Guest, pk=guest_id)
+
+    return render(request, 'guest/show_guest.html', {'guest' : guest})
+
+
+
