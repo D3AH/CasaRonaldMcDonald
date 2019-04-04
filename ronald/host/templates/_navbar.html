@@ -13,7 +13,7 @@
             <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Huespedes</a></li>
             <li class="nav-item"><a class="nav-link" href="{% url 'list_houses' %}">Casas</a></li>
-            <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Hospitales</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'list_hospitals' %}">Hospitales</a></li>
         </ul>
         <span class="navbar-text" style="margin-right: 35px">
         Manteniendo las familias cerca.
@@ -25,8 +25,9 @@
                     {% icon 'user' %} {{ user.username }}
                 </button>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Edit profile</a>
-                    <a class="dropdown-item" href="#">Change password</a>
+                    <a class="dropdown-item" href="{% url 'add_house' %}">Agregar casa</a>
+                    <a class="dropdown-item" href="{% url 'add_hospital' %}">Agregar hospital</a>
+                    <a class="dropdown-item" href="{% url 'add_house' %}">Agregar paciente</a>
                     <a class="dropdown-item" href="accounts/logout">Logout</a>
                 </div>
             </div>
