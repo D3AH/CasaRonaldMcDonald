@@ -55,9 +55,10 @@ def addGuest(request):
         if form.is_valid():
             form.save(commit=True)
             return HttpResponseRedirect('/')
-        else:
-            form =GuestForm()
-        return render(request, 'components/boostrap_form.html', {'form' : form, 'action': '/guest/agregar'})
+    else:
+        form = GuestForm()
+
+    return render(request, 'components/bootstrap_form.html', {'form' : form, 'action': '/guest/agregar'})
 
 def listGuests(request):
     all_guests = get_list_or_404(Guest)
