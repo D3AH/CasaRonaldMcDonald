@@ -61,7 +61,6 @@ STATIC_ROOT = './static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-print(MEDIA_ROOT)
 
 SASS_PROCESSOR_INCLUDE_DIRS = [
     os.path.join(BASE_DIR, 'host/static/scss'),
@@ -151,4 +150,4 @@ USE_L10N = True
 
 USE_TZ = True
 
-SITE_ID = 3
+SITE_ID = 2
