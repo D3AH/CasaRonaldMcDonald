@@ -26,7 +26,7 @@ def listHouses(request):
 def showHouse(request, house_id):
     house = get_object_or_404(House, pk=house_id)
 
-    return render(request, 'house/show_house.html', { 'house': house })
+    return render(request, 'show_simple.html', { 'object': house })
 
 def addHospital(request):
     if request.method == 'POST':
@@ -47,7 +47,7 @@ def listHospitals(request):
 def showHospital(request, hospital_id):
     hospital = get_object_or_404(Hospital, pk=hospital_id)
 
-    return render(request, 'hospital/show_hospital.html', {'hospital' : hospital})
+    return render(request, 'show_simple.html', {'object' : hospital})
 
 def addGuest(request):
     if request.method == 'POST':
@@ -68,7 +68,4 @@ def listGuests(request):
 def showGuest(request, guest_id):
     guest = get_object_or_404(Guest, pk=guest_id)
 
-    return render(request, 'guest/show_guest.html', {'guest' : guest})
-
-
-
+    return render(request, 'show_simple.html', {'object' : guest})
