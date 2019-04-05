@@ -28,7 +28,7 @@
                     <a class="dropdown-item" href="{% url 'add_house' %}">Agregar casa</a>
                     <a class="dropdown-item" href="{% url 'add_hospital' %}">Agregar hospital</a>
                     <a class="dropdown-item" href="{% url 'add_guest' %}">Agregar paciente</a>
-                    <a class="dropdown-item" href="accounts/logout">Logout</a>
+                    <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
                 </div>
             </div>
         {% else %}

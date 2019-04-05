@@ -37,6 +37,7 @@ class Guest(models.Model):
     # ForeignKey
     hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE)
     house = models.ForeignKey(House, on_delete=models.CASCADE)
+    phone_address = models.CharField(max_length=10, default='Sin registrar')
 
     @property
     def name(self):

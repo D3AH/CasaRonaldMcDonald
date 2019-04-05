@@ -15,4 +15,4 @@ class HospitalForm(forms.ModelForm):
 class GuestForm(forms.ModelForm):
     class Meta:
         model = Guest
-        fields = ['first_name', 'last_name', 'department', 'date_of_birth', 'date_of_request', 'hospital', 'house', 'room_number']
+        fields = ['first_name', 'last_name', 'department', 'date_of_birth', 'date_of_request', 'hospital', 'house', 'room_number', 'phone_address']

@@ -12,5 +12,5 @@ urlpatterns = [
     path('hospital/<int:hospital_id>/', views.showHospital, name='show_hospital'),
     path('guest/agregar', views.addGuest, name='add_guest'),
     path('guest', views.listGuests, name='list_guests'),
-    path('guest/<int:guest_id>', views.showGuest, name='show_guest'),
+    path('guest/<int:guest_id>/', views.showGuest, name='show_guest'),
 ]
