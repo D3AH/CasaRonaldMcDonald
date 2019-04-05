@@ -3,6 +3,7 @@ $red: #c12c33;
 main {
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 167px;
 }
 
 // Navbar
@@ -31,6 +32,15 @@ nav {
             width: 10px;
         }
     }
+}
+
+// Footer
+
+footer {
+    width: 100%;
+    text-align: center;
+    height: 160px;
+    margin-top: -160px;
 }
 
 // UI

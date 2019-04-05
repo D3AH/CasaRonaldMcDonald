@@ -1,6 +1,7 @@
 main {
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  margin-bottom: 167px; }
 
 nav {
   padding-top: 5px !important;
@@ -16,6 +17,12 @@ nav {
     color: #be2b32 !important; }
   nav .dropdown-account .btn img {
     width: 10px; }
+
+footer {
+  width: 100%;
+  text-align: center;
+  height: 160px;
+  margin-top: -160px; }
 
 .card {
   text-align: center;
@@ -68,13 +75,6 @@ nav {
 .iconos a i:hover {
   color: black; }
 
-/* footer{
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}    */
 .cuerpo {
   margin-top: 25px; }
 
