@@ -61,6 +61,18 @@ nav {
     }
 }
 
+.large.card {
+    padding: 10px;
+    height: 30rem !important;
+
+    .img-container {
+        height: 20rem;
+        img {
+            width: 50%;
+        }
+    }
+}
+
 .shadow {
     -moz-box-shadow:    2px 2px 2px 2px #ccccccb8;
     -webkit-box-shadow: 2px 2px 2px 2px #ccccccb8;
