@@ -3,13 +3,11 @@
 <link rel="stylesheet" media="screen" href="{% sass_src 'scss/_login.scss' %}"/>
 
 <div class="overlay" style="align-content: center">
-  <div class="wrap">
-   <h1>Login</h1>
-<input type="text" placeholder="Username">
-<input type="password"placeholder="Password">
+  <h1>Login</h1>
+  <form method="POST" class="wrap">
+    {% csrf_token %}
+    {{ form.as_p }}
     <input type="submit" value="Sign In">
-    <a href="#"><i class="fa fa-question"></i>Forgotten Password</a>
-    <a href="#"><i class="fa fa-user"></i>Create an Account</a>
-  </div>
-  <p class="message">Not registered? <a href="accounts/login">Create an account</a></p>
+  </form>
+  <p class="message">Not registered? <a href="{% url 'account_registration' %}">Create an account</a></p>
 </div>
